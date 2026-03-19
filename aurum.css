@@ -184,7 +184,7 @@
       position: absolute;
       inset: 0;
       /* Imagem Unsplash: sapatilha vermelha icónica (foto de estúdio) */
-      background-image: url('.../img/aurum.png');
+      background-image: url('/img/aurum.png');
       background-size: cover;
       background-position: center right;
       transform-origin: center;
