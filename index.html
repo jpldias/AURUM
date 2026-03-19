@@ -1,0 +1,2301 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  AURUM — Luxury Athletic Brand
+  Tipo: Landing Page estilo Nike (Portfolio)
+  Framework: Bootstrap 5.3
+  SEO: Meta tags, Open Graph, Twitter Card, JSON-LD
+  Tema: Premium & Luxury (Dourado / Preto)
+  Autor: Gerado para Portfolio
+  ============================================================
+-->
+<html lang="pt-PT">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- =============================================
+       SEO — BLOCO PRIMÁRIO
+       Title optimizado com keyword principal no início.
+       Máx. 60 caracteres para não ser truncado no Google.
+       ============================================= -->
+  <title>AURUM — Equipamento Desportivo de Luxo | Forjado para Vencer</title>
+
+  <!-- Meta description: 150–160 chars, keyword natural, CTA no final -->
+  <meta name="description"
+    content="AURUM eleva o desporto a um novo nível. Sapatilhas, roupa, acessórios e equipamento de fitness premium para quem exige mais. Descobre a coleção exclusiva.">
+
+  <!-- Robots: permite indexação e seguimento de links -->
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical: URL definitivo desta página (evita conteúdo duplicado) -->
+  <link rel="canonical" href="https://www.aurum.pt/">
+
+  <!-- Keyword principal e autor (menos relevante para Google, útil para Bing/outros) -->
+  <meta name="keywords"
+    content="equipamento desportivo luxo, sapatilhas premium, roupa desportiva premium, fitness equipamento, AURUM">
+  <meta name="author" content="AURUM">
+
+  <!-- =============================================
+       OPEN GRAPH (Facebook, LinkedIn, WhatsApp)
+       Controla como o link aparece quando partilhado.
+       Imagem: obrigatoriamente 1200×630px.
+       ============================================= -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AURUM">
+  <meta property="og:title" content="AURUM — Equipamento Desportivo de Luxo">
+  <meta property="og:description"
+    content="Não é para todos. É para quem exige mais. Descobre a coleção AURUM — onde o desporto encontra o luxo.">
+  <meta property="og:url" content="https://www.aurum.pt/">
+  <meta property="og:image" content="https://www.aurum.pt/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="AURUM — Equipamento Desportivo de Luxo">
+  <meta property="og:locale" content="pt_PT">
+
+  <!-- =============================================
+       TWITTER / X CARD
+       summary_large_image = imagem grande + título + descrição
+       ============================================= -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@AURUMofficial">
+  <meta name="twitter:creator" content="@AURUMofficial">
+  <meta name="twitter:title" content="AURUM — Equipamento Desportivo de Luxo">
+  <meta name="twitter:description"
+    content="Não é para todos. É para quem exige mais. Descobre a coleção AURUM.">
+  <meta name="twitter:image" content="https://www.aurum.pt/assets/twitter-card.jpg">
+
+  <!-- =============================================
+       JSON-LD — STRUCTURED DATA (Schema.org)
+       Tipo: Organization + WebSite (homepage padrão)
+       Google usa isto para rich results e Knowledge Panel.
+       SearchAction permite Google mostrar search box inline.
+       ============================================= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.aurum.pt/#organization",
+        "name": "AURUM",
+        "url": "https://www.aurum.pt/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.aurum.pt/assets/logo.png",
+          "width": 300,
+          "height": 100
+        },
+        "description": "AURUM é uma marca portuguesa de equipamento desportivo de luxo — sapatilhas, roupa, acessórios e equipamento de fitness premium.",
+        "foundingDate": "2024",
+        "foundingLocation": "Lisboa, Portugal",
+        "sameAs": [
+          "https://www.instagram.com/aurumofficial",
+          "https://www.facebook.com/aurumofficial",
+          "https://www.linkedin.com/company/aurum"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "availableLanguage": ["Portuguese", "English"],
+          "email": "hello@aurum.pt"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.aurum.pt/#website",
+        "url": "https://www.aurum.pt/",
+        "name": "AURUM",
+        "publisher": { "@id": "https://www.aurum.pt/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.aurum.pt/pesquisa?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.aurum.pt/produto/aurum-x1#product",
+        "name": "AURUM X1 — Sapatilha de Alta Performance",
+        "description": "A sapatilha AURUM X1 combina tecnologia de ponta com materiais de luxo. Carbono, couro italiano e sola de amortecimento adaptativo.",
+        "brand": { "@id": "https://www.aurum.pt/#organization" },
+        "image": "https://www.aurum.pt/assets/produto-x1.jpg",
+        "sku": "AUR-X1-001",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.aurum.pt/produto/aurum-x1",
+          "priceCurrency": "EUR",
+          "price": "349.00",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2025-12-31"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "312",
+          "bestRating": "5"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- BreadcrumbList — útil para páginas internas; incluído aqui como referência de portfolio -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Início",
+        "item": "https://www.aurum.pt/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Coleção",
+        "item": "https://www.aurum.pt/colecao/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- =============================================
+       FONTES — Google Fonts
+       Playfair Display: display/títulos (elegância editorial)
+       Barlow Condensed: subtítulos e labels (força desportiva)
+       DM Sans: corpo de texto (legibilidade moderna)
+       preconnect reduz latência de DNS.
+       ============================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Barlow+Condensed:wght@300;400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- =============================================
+       BOOTSTRAP 5.3 — CDN
+       Framework CSS + JS para grid, componentes e utilitários.
+       integrity + crossorigin = Subresource Integrity (segurança).
+       ============================================= -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous">
+
+  <!-- Bootstrap Icons — ícones SVG nativos do Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- =============================================
+       CSS CUSTOMIZADO
+       Variáveis CSS (custom properties) para consistência.
+       Sobrepõe e estende Bootstrap sem o modificar.
+       ============================================= -->
+  <style>
+    /* -----------------------------------------------
+       VARIÁVEIS GLOBAIS — Sistema de Design AURUM
+       Centraliza cores, fontes e transições.
+       ----------------------------------------------- */
+    :root {
+      --aurum-gold:        #C9A84C;   /* Dourado principal */
+      --aurum-gold-light:  #E8C97A;   /* Dourado claro (hover) */
+      --aurum-gold-dark:   #8B6914;   /* Dourado escuro (sombras) */
+      --aurum-black:       #080808;   /* Preto profundo */
+      --aurum-dark:        #111111;   /* Preto suave (cards) */
+      --aurum-dark-mid:    #1A1A1A;   /* Preto médio (secções alt) */
+      --aurum-gray:        #2E2E2E;   /* Cinza escuro */
+      --aurum-gray-light:  #888888;   /* Cinza texto secundário */
+      --aurum-white:       #F5F0E8;   /* Branco quente (não puro) */
+
+      /* Tipografia */
+      --font-display:  'Playfair Display', Georgia, serif;
+      --font-label:    'Barlow Condensed', sans-serif;
+      --font-body:     'DM Sans', sans-serif;
+
+      /* Transição padrão para hover states */
+      --transition:    all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+      /* Sombra dourada para efeitos de glow */
+      --gold-glow:     0 0 30px rgba(201, 168, 76, 0.25);
+      --gold-glow-lg:  0 0 60px rgba(201, 168, 76, 0.35);
+    }
+
+    /* -----------------------------------------------
+       RESET & BASE
+       ----------------------------------------------- */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth; /* Scroll suave para âncoras internas */
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--aurum-black);
+      color: var(--aurum-white);
+      overflow-x: hidden; /* Evita scroll horizontal acidental */
+      font-weight: 300;
+    }
+
+    /* Scrollbar personalizada (Chrome/Edge) */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--aurum-black); }
+    ::-webkit-scrollbar-thumb { background: var(--aurum-gold); border-radius: 3px; }
+
+    /* -----------------------------------------------
+       TIPOGRAFIA — Hierarquia editorial
+       ----------------------------------------------- */
+    .font-display  { font-family: var(--font-display); }
+    .font-label    { font-family: var(--font-label); letter-spacing: 0.12em; }
+
+    .text-gold     { color: var(--aurum-gold) !important; }
+    .text-muted-au { color: var(--aurum-gray-light) !important; }
+
+    /* Label de categoria em maiúsculas rastreadas */
+    .label-tag {
+      font-family: var(--font-label);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--aurum-gold);
+    }
+
+    /* -----------------------------------------------
+       BOTÕES AURUM
+       Dois estilos: sólido dourado e contorno dourado.
+       ----------------------------------------------- */
+
+    /* Botão primário — fundo dourado, texto preto */
+    .btn-aurum {
+      font-family: var(--font-label);
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 14px 36px;
+      background: var(--aurum-gold);
+      color: var(--aurum-black);
+      border: 2px solid var(--aurum-gold);
+      border-radius: 0;              /* Sem border-radius = estética de luxo angular */
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Efeito de sweep (linha que passa) ao hover */
+    .btn-aurum::before {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .btn-aurum:hover::before { left: 100%; }
+    .btn-aurum:hover {
+      background: var(--aurum-gold-light);
+      border-color: var(--aurum-gold-light);
+      color: var(--aurum-black);
+      box-shadow: var(--gold-glow);
+      transform: translateY(-2px);
+    }
+
+    /* Botão outline — fundo transparente, borda dourada */
+    .btn-aurum-outline {
+      font-family: var(--font-label);
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 12px 32px;
+      background: transparent;
+      color: var(--aurum-gold);
+      border: 1px solid var(--aurum-gold);
+      border-radius: 0;
+      transition: var(--transition);
+    }
+
+    .btn-aurum-outline:hover {
+      background: var(--aurum-gold);
+      color: var(--aurum-black);
+      box-shadow: var(--gold-glow);
+    }
+
+    /* -----------------------------------------------
+       NAVBAR
+       Transparente sobre o hero; fica sólida ao scroll
+       via JS (classe .scrolled adicionada dinamicamente).
+       ----------------------------------------------- */
+    .navbar-aurum {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1050;
+      padding: 20px 0;
+      background: transparent;
+      transition: var(--transition);
+      border-bottom: 1px solid transparent;
+    }
+
+    /* Estado após scroll — fundo escuro semitransparente */
+    .navbar-aurum.scrolled {
+      background: rgba(8, 8, 8, 0.96);
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    /* Logo — Playfair Display bold com tracking dourado */
+    .navbar-brand-aurum {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 1.6rem;
+      color: var(--aurum-gold) !important;
+      letter-spacing: 0.15em;
+      text-decoration: none;
+    }
+
+    /* Links de navegação */
+    .nav-link-aurum {
+      font-family: var(--font-label);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--aurum-white) !important;
+      padding: 8px 16px !important;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    /* Sublinhado que cresce do centro ao hover */
+    .nav-link-aurum::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 50%;
+      width: 0; height: 1px;
+      background: var(--aurum-gold);
+      transition: var(--transition);
+      transform: translateX(-50%);
+    }
+
+    .nav-link-aurum:hover { color: var(--aurum-gold) !important; }
+    .nav-link-aurum:hover::after { width: 60%; }
+
+    /* -----------------------------------------------
+       HERO SECTION
+       Full-viewport, layout em duas colunas:
+       esquerda = copy, direita = produto visual.
+       Fundo com gradiente e partículas decorativas CSS.
+       ----------------------------------------------- */
+    .hero-section {
+      min-height: 100vh;
+      background:
+        radial-gradient(ellipse 60% 80% at 70% 50%, rgba(201, 168, 76, 0.06) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 10% 80%, rgba(201, 168, 76, 0.04) 0%, transparent 60%),
+        var(--aurum-black);
+      display: flex;
+      align-items: center;
+      padding-top: 100px; /* Compensa a navbar fixa */
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Linha diagonal decorativa (inspiração Nike) */
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: -200px; right: -100px;
+      width: 600px; height: 600px;
+      border: 1px solid rgba(201, 168, 76, 0.08);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-section::after {
+      content: '';
+      position: absolute;
+      bottom: -300px; right: -200px;
+      width: 900px; height: 900px;
+      border: 1px solid rgba(201, 168, 76, 0.05);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    /* Label de coleção acima do título */
+    .hero-collection-label {
+      font-family: var(--font-label);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--aurum-gold);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .hero-collection-label::before {
+      content: '';
+      display: inline-block;
+      width: 40px; height: 1px;
+      background: var(--aurum-gold);
+    }
+
+    /* Título principal do hero */
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 7vw, 6.5rem); /* Responsivo: mín 3rem, máx 6.5rem */
+      font-weight: 900;
+      line-height: 0.95;
+      color: var(--aurum-white);
+      margin-bottom: 24px;
+    }
+
+    .hero-title .highlight {
+      color: var(--aurum-gold);
+      font-style: italic; /* Contraste editorial: gold + itálico */
+    }
+
+    .hero-tagline {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--aurum-gray-light);
+      max-width: 420px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    /* Grupo de CTAs */
+    .hero-cta-group {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    /* Estatística rápida abaixo dos CTAs */
+    .hero-stat {
+      font-family: var(--font-label);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--aurum-gray-light);
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--aurum-gray);
+    }
+
+    .hero-stat span {
+      color: var(--aurum-gold);
+      font-size: 1.4rem;
+      font-weight: 800;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* Coluna da imagem do produto no hero */
+    .hero-product-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Círculo de luz dourada atrás do produto */
+    .hero-glow-ring {
+      position: absolute;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(201, 168, 76, 0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Produto em placeholder CSS (sem imagem real) */
+    .hero-product-placeholder {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 520px;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: float 6s ease-in-out infinite; /* Levitação suave */
+    }
+
+    /* Sapatilha representada por formas CSS */
+    .shoe-visual {
+      width: 320px;
+      height: 200px;
+      position: relative;
+    }
+
+    /* Corpo principal da sapatilha */
+    .shoe-body {
+      width: 100%;
+      height: 120px;
+      background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, var(--aurum-gold-dark) 100%);
+      border-radius: 60px 80px 20px 30px;
+      position: absolute;
+      bottom: 40px;
+      box-shadow: 0 20px 60px rgba(201, 168, 76, 0.3), inset 0 1px 0 rgba(201, 168, 76, 0.2);
+      border: 1px solid rgba(201, 168, 76, 0.3);
+    }
+
+    .shoe-sole {
+      width: 88%;
+      height: 30px;
+      background: linear-gradient(90deg, var(--aurum-gold-dark), var(--aurum-gold), var(--aurum-gold-dark));
+      border-radius: 0 0 30px 30px;
+      position: absolute;
+      bottom: 15px;
+      left: 6%;
+      box-shadow: 0 8px 30px rgba(201, 168, 76, 0.4);
+    }
+
+    .shoe-tip {
+      width: 80px; height: 50px;
+      background: linear-gradient(135deg, #1f1f1f, var(--aurum-gold-dark));
+      border-radius: 50% 80% 20% 20%;
+      position: absolute;
+      right: -10px;
+      bottom: 45px;
+      border: 1px solid rgba(201, 168, 76, 0.2);
+    }
+
+    .shoe-lace {
+      width: 60%;
+      height: 8px;
+      background: repeating-linear-gradient(
+        90deg,
+        var(--aurum-gold) 0px, var(--aurum-gold) 8px,
+        transparent 8px, transparent 14px
+      );
+      position: absolute;
+      top: 20px;
+      left: 15%;
+      opacity: 0.7;
+    }
+
+    /* Swoosh simplificado */
+    .shoe-stripe {
+      width: 100px; height: 3px;
+      background: linear-gradient(90deg, transparent, var(--aurum-gold), transparent);
+      position: absolute;
+      bottom: 65px;
+      left: 20%;
+      border-radius: 2px;
+      box-shadow: 0 0 10px var(--aurum-gold);
+    }
+
+    /* Animação de levitação */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+
+    /* Badge de preço flutuante */
+    .hero-price-badge {
+      position: absolute;
+      top: 10%; right: 5%;
+      background: rgba(8, 8, 8, 0.9);
+      border: 1px solid var(--aurum-gold);
+      padding: 16px 20px;
+      text-align: center;
+      animation: float 6s ease-in-out infinite;
+      animation-delay: -2s;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-price-badge .price-label {
+      font-family: var(--font-label);
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      color: var(--aurum-gray-light);
+      text-transform: uppercase;
+    }
+
+    .hero-price-badge .price-value {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: var(--aurum-gold);
+      line-height: 1.1;
+    }
+
+    /* Badge de rating flutuante */
+    .hero-rating-badge {
+      position: absolute;
+      bottom: 15%; left: 2%;
+      background: rgba(201, 168, 76, 0.1);
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      animation: float 6s ease-in-out infinite;
+      animation-delay: -4s;
+      backdrop-filter: blur(10px);
+    }
+
+    /* -----------------------------------------------
+       TICKER / ANNOUNCEMENT BAR
+       Faixa animada com texto que desliza (estilo Nike).
+       ----------------------------------------------- */
+    .ticker-section {
+      background: var(--aurum-gold);
+      padding: 12px 0;
+      overflow: hidden;
+    }
+
+    .ticker-track {
+      display: flex;
+      gap: 0;
+      animation: ticker 30s linear infinite;
+      white-space: nowrap;
+    }
+
+    .ticker-item {
+      font-family: var(--font-label);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--aurum-black);
+      padding: 0 40px;
+      flex-shrink: 0;
+    }
+
+    .ticker-item i {
+      margin: 0 10px;
+      opacity: 0.5;
+    }
+
+    @keyframes ticker {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); } /* Move metade (o resto é duplicado) */
+    }
+
+    /* -----------------------------------------------
+       CATEGORIAS — Grid 2×2
+       Cards com imagem de fundo e overlay ao hover.
+       ----------------------------------------------- */
+    .categories-section {
+      padding: 100px 0;
+      background: var(--aurum-dark);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-weight: 900;
+      color: var(--aurum-white);
+      line-height: 1.1;
+    }
+
+    .section-divider {
+      width: 60px; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--aurum-gold), transparent);
+      margin: 20px auto;
+    }
+
+    /* Card de categoria */
+    .category-card {
+      position: relative;
+      aspect-ratio: 3/4; /* Proporção vertical = mais impacto */
+      overflow: hidden;
+      cursor: pointer;
+      background: var(--aurum-gray);
+    }
+
+    /* Fundo geométrico do card (simula foto de produto) */
+    .category-card-bg {
+      width: 100%; height: 100%;
+      position: absolute;
+      top: 0; left: 0;
+      transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    /* Gradiente de overlay — escurece de baixo para cima */
+    .category-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(8,8,8,0.95) 0%,
+        rgba(8,8,8,0.3) 50%,
+        rgba(8,8,8,0.05) 100%
+      );
+      transition: var(--transition);
+    }
+
+    .category-card:hover .category-card-bg {
+      transform: scale(1.08); /* Zoom suave ao hover */
+    }
+
+    .category-card:hover .category-card-overlay {
+      background: linear-gradient(
+        to top,
+        rgba(8,8,8,0.98) 0%,
+        rgba(8,8,8,0.5) 60%,
+        rgba(8,8,8,0.1) 100%
+      );
+    }
+
+    .category-card-content {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 32px;
+      z-index: 2;
+    }
+
+    .category-card-title {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: var(--aurum-white);
+      margin-bottom: 8px;
+      line-height: 1;
+    }
+
+    .category-card-count {
+      font-family: var(--font-label);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--aurum-gold);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    /* Link de "explorar" que sobe ao hover */
+    .category-card-cta {
+      font-family: var(--font-label);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--aurum-gold);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transform: translateY(10px);
+      opacity: 0;
+      transition: var(--transition);
+    }
+
+    .category-card-cta::after {
+      content: '';
+      display: inline-block;
+      width: 30px; height: 1px;
+      background: var(--aurum-gold);
+      transition: width 0.3s ease;
+    }
+
+    .category-card:hover .category-card-cta {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .category-card:hover .category-card-cta::after { width: 50px; }
+
+    /* Visuais CSS para cada categoria (simulam fotografias) */
+    .cat-bg-footwear {
+      background:
+        radial-gradient(ellipse at 60% 70%, rgba(201, 168, 76, 0.15) 0%, transparent 60%),
+        linear-gradient(160deg, #1a1a1a 0%, #0d0d0d 100%);
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    .cat-bg-clothing {
+      background:
+        radial-gradient(ellipse at 40% 30%, rgba(201, 168, 76, 0.12) 0%, transparent 60%),
+        linear-gradient(160deg, #141410 0%, #0a0a08 100%);
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    .cat-bg-fitness {
+      background:
+        radial-gradient(ellipse at 50% 50%, rgba(201, 168, 76, 0.1) 0%, transparent 60%),
+        linear-gradient(160deg, #0f0f13 0%, #080810 100%);
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    .cat-bg-accessories {
+      background:
+        radial-gradient(ellipse at 70% 30%, rgba(201, 168, 76, 0.1) 0%, transparent 60%),
+        linear-gradient(160deg, #121212 0%, #0a0a0a 100%);
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    /* Ícones CSS dentro dos cards de categoria */
+    .cat-icon {
+      font-size: 6rem;
+      color: rgba(201, 168, 76, 0.15);
+      filter: drop-shadow(0 0 20px rgba(201, 168, 76, 0.2));
+    }
+
+    /* -----------------------------------------------
+       PRODUTO EM DESTAQUE
+       Layout assimétrico: imagem grande esquerda,
+       detalhes e specs à direita.
+       ----------------------------------------------- */
+    .featured-section {
+      padding: 120px 0;
+      background: var(--aurum-black);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Fundo decorativo com letra grande */
+    .featured-section::before {
+      content: 'X1';
+      position: absolute;
+      top: 50%; right: 5%;
+      transform: translateY(-50%);
+      font-family: var(--font-display);
+      font-size: 20rem;
+      font-weight: 900;
+      color: rgba(201, 168, 76, 0.03);
+      pointer-events: none;
+      line-height: 1;
+    }
+
+    /* Wrapper da imagem do produto em destaque */
+    .featured-product-visual {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Halo dourado atrás do produto */
+    .featured-glow {
+      position: absolute;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(201, 168, 76, 0.15) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    /* Sapatilha maior para secção de destaque */
+    .featured-shoe {
+      position: relative;
+      z-index: 2;
+      width: 380px; height: 250px;
+    }
+
+    .featured-shoe .shoe-body {
+      height: 150px;
+      bottom: 50px;
+      background: linear-gradient(135deg, #222 0%, #333 40%, var(--aurum-gold-dark) 100%);
+    }
+
+    .featured-shoe .shoe-sole {
+      height: 36px;
+      bottom: 18px;
+    }
+
+    .featured-shoe .shoe-tip {
+      width: 100px; height: 65px;
+    }
+
+    /* Título do produto em destaque */
+    .featured-product-name {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 900;
+      color: var(--aurum-white);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .featured-product-sub {
+      font-family: var(--font-label);
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      color: var(--aurum-gold);
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    /* Linha separadora dourada */
+    .gold-line {
+      width: 50px; height: 2px;
+      background: var(--aurum-gold);
+      margin-bottom: 24px;
+    }
+
+    .featured-product-desc {
+      font-family: var(--font-body);
+      font-weight: 300;
+      color: var(--aurum-gray-light);
+      line-height: 1.8;
+      margin-bottom: 36px;
+      font-size: 0.95rem;
+    }
+
+    /* Grid de especificações técnicas */
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .spec-item {
+      padding: 16px;
+      border: 1px solid rgba(201, 168, 76, 0.15);
+      background: rgba(201, 168, 76, 0.03);
+      transition: var(--transition);
+    }
+
+    .spec-item:hover {
+      border-color: rgba(201, 168, 76, 0.5);
+      background: rgba(201, 168, 76, 0.06);
+    }
+
+    .spec-label {
+      font-family: var(--font-label);
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      color: var(--aurum-gray-light);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .spec-value {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--aurum-white);
+    }
+
+    /* Preço do produto em destaque */
+    .featured-price {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--aurum-gold);
+      margin-bottom: 24px;
+    }
+
+    .featured-price small {
+      font-size: 1rem;
+      color: var(--aurum-gray-light);
+      font-family: var(--font-label);
+      letter-spacing: 0.1em;
+    }
+
+    /* -----------------------------------------------
+       MANIFESTO / BRAND STORY
+       Secção de branding imersiva com citação em destaque.
+       ----------------------------------------------- */
+    .manifesto-section {
+      padding: 120px 0;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(201, 168, 76, 0.08) 0%, transparent 60%),
+        var(--aurum-dark-mid);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Decorações de aspas gigantes */
+    .manifesto-section::before {
+      content: '"';
+      position: absolute;
+      top: -40px; left: 5%;
+      font-family: var(--font-display);
+      font-size: 30rem;
+      color: rgba(201, 168, 76, 0.03);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .manifesto-quote {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 3.2rem);
+      font-weight: 900;
+      color: var(--aurum-white);
+      line-height: 1.3;
+      max-width: 900px;
+      margin: 0 auto 40px;
+      font-style: italic;
+    }
+
+    .manifesto-quote em {
+      color: var(--aurum-gold);
+      font-style: normal;
+    }
+
+    /* -----------------------------------------------
+       STATS BAR — Números de impacto
+       ----------------------------------------------- */
+    .stats-section {
+      padding: 80px 0;
+      background: var(--aurum-gold);
+    }
+
+    .stat-number {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 900;
+      color: var(--aurum-black);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-family: var(--font-label);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(8, 8, 8, 0.65);
+      margin-top: 6px;
+    }
+
+    .stats-divider {
+      width: 1px; height: 60px;
+      background: rgba(8, 8, 8, 0.2);
+    }
+
+    /* -----------------------------------------------
+       PRODUTOS — Grid de 4 cards
+       ----------------------------------------------- */
+    .products-section {
+      padding: 100px 0;
+      background: var(--aurum-dark);
+    }
+
+    /* Card de produto individual */
+    .product-card {
+      background: var(--aurum-dark-mid);
+      overflow: hidden;
+      position: relative;
+      transition: var(--transition);
+      border: 1px solid transparent;
+    }
+
+    .product-card:hover {
+      border-color: rgba(201, 168, 76, 0.3);
+      transform: translateY(-6px);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.5), var(--gold-glow);
+    }
+
+    /* Área de imagem do card */
+    .product-card-img {
+      height: 260px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--aurum-gray);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .product-card-icon {
+      font-size: 5rem;
+      color: rgba(201, 168, 76, 0.2);
+      transition: var(--transition);
+    }
+
+    .product-card:hover .product-card-icon {
+      color: rgba(201, 168, 76, 0.4);
+      transform: scale(1.1);
+    }
+
+    /* Badge "Novo" / "Best Seller" */
+    .product-badge {
+      position: absolute;
+      top: 16px; left: 16px;
+      font-family: var(--font-label);
+      font-size: 0.58rem;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      background: var(--aurum-gold);
+      color: var(--aurum-black);
+    }
+
+    /* Botão de wishlist (coração) */
+    .product-wish-btn {
+      position: absolute;
+      top: 12px; right: 12px;
+      width: 36px; height: 36px;
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      background: rgba(8,8,8,0.8);
+      color: var(--aurum-gold);
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: var(--transition);
+      opacity: 0;
+    }
+
+    .product-card:hover .product-wish-btn { opacity: 1; }
+    .product-wish-btn:hover {
+      background: var(--aurum-gold);
+      color: var(--aurum-black);
+    }
+
+    /* Conteúdo textual do card */
+    .product-card-body {
+      padding: 24px;
+    }
+
+    .product-card-cat {
+      font-family: var(--font-label);
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      color: var(--aurum-gold);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .product-card-name {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--aurum-white);
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+
+    .product-card-desc {
+      font-size: 0.82rem;
+      color: var(--aurum-gray-light);
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+
+    /* Rating stars */
+    .product-rating {
+      color: var(--aurum-gold);
+      font-size: 0.7rem;
+      margin-bottom: 16px;
+    }
+
+    .product-card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 24px;
+      border-top: 1px solid rgba(201, 168, 76, 0.1);
+    }
+
+    .product-price {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--aurum-gold);
+    }
+
+    /* -----------------------------------------------
+       NEWSLETTER / CTA FINAL
+       ----------------------------------------------- */
+    .newsletter-section {
+      padding: 120px 0;
+      background:
+        radial-gradient(ellipse at 50% 100%, rgba(201, 168, 76, 0.1) 0%, transparent 60%),
+        var(--aurum-black);
+    }
+
+    .newsletter-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-weight: 900;
+      color: var(--aurum-white);
+      line-height: 1.1;
+    }
+
+    /* Input estilo AURUM */
+    .input-aurum {
+      background: transparent;
+      border: 1px solid rgba(201, 168, 76, 0.4);
+      border-right: none;
+      color: var(--aurum-white);
+      padding: 16px 24px;
+      font-family: var(--font-label);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      border-radius: 0;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .input-aurum::placeholder { color: var(--aurum-gray-light); }
+    .input-aurum:focus {
+      background: rgba(201, 168, 76, 0.04);
+      border-color: var(--aurum-gold);
+      box-shadow: none;
+      color: var(--aurum-white);
+    }
+
+    /* -----------------------------------------------
+       FOOTER
+       ----------------------------------------------- */
+    .footer-aurum {
+      background: var(--aurum-dark);
+      padding: 80px 0 40px;
+      border-top: 1px solid rgba(201, 168, 76, 0.15);
+    }
+
+    .footer-brand {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--aurum-gold);
+      letter-spacing: 0.1em;
+      margin-bottom: 16px;
+    }
+
+    .footer-tagline {
+      font-family: var(--font-label);
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      color: var(--aurum-gray-light);
+      text-transform: uppercase;
+    }
+
+    .footer-heading {
+      font-family: var(--font-label);
+      font-size: 0.65rem;
+      font-weight: 800;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--aurum-gold);
+      margin-bottom: 20px;
+    }
+
+    .footer-link {
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      color: var(--aurum-gray-light);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 10px;
+      transition: var(--transition);
+    }
+
+    .footer-link:hover {
+      color: var(--aurum-gold);
+      padding-left: 6px;
+    }
+
+    /* Ícones de redes sociais */
+    .social-link {
+      width: 40px; height: 40px;
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--aurum-gray-light);
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: var(--transition);
+      margin-right: 8px;
+    }
+
+    .social-link:hover {
+      background: var(--aurum-gold);
+      border-color: var(--aurum-gold);
+      color: var(--aurum-black);
+    }
+
+    /* Linha de copyright */
+    .footer-bottom {
+      padding-top: 40px;
+      margin-top: 60px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .footer-copy {
+      font-family: var(--font-label);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: rgba(136, 136, 136, 0.5);
+    }
+
+    /* -----------------------------------------------
+       ANIMAÇÕES DE ENTRADA
+       Elementos surgem ao entrar no viewport.
+       Controlado via JS (IntersectionObserver).
+       ----------------------------------------------- */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Delay escalonado para elementos em série */
+    .fade-up:nth-child(1) { transition-delay: 0.0s; }
+    .fade-up:nth-child(2) { transition-delay: 0.1s; }
+    .fade-up:nth-child(3) { transition-delay: 0.2s; }
+    .fade-up:nth-child(4) { transition-delay: 0.3s; }
+
+    /* -----------------------------------------------
+       UTILITÁRIOS RESPONSIVOS
+       ----------------------------------------------- */
+    @media (max-width: 991px) {
+      .hero-product-wrap { margin-top: 60px; }
+      .hero-price-badge { display: none; }
+      .stats-divider { display: none; }
+      .featured-section::before { font-size: 12rem; }
+    }
+
+    @media (max-width: 767px) {
+      .shoe-visual, .featured-shoe { width: 240px; height: 160px; }
+      .shoe-body { height: 90px; bottom: 30px; }
+      .shoe-sole { height: 22px; bottom: 12px; }
+      .shoe-tip { width: 60px; height: 40px; }
+      .hero-glow-ring { width: 300px; height: 300px; }
+      .hero-rating-badge { display: none; }
+      .specs-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =============================================
+       NAVBAR — Barra de navegação fixa
+       Bootstrap: navbar + container-fluid para full-width
+       JS controla classe .scrolled via scroll event
+       ============================================= -->
+  <nav class="navbar-aurum" id="mainNav" role="navigation" aria-label="Navegação principal">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center w-100">
+
+        <!-- Logo / Brand name -->
+        <a href="#" class="navbar-brand-aurum" aria-label="AURUM — Página inicial">
+          AURUM
+        </a>
+
+        <!-- Links de navegação — desktop (ocultos em mobile via Bootstrap d-none d-lg-flex) -->
+        <div class="d-none d-lg-flex align-items-center gap-1">
+          <a href="#categorias" class="nav-link-aurum">Coleções</a>
+          <a href="#produto" class="nav-link-aurum">Produto</a>
+          <a href="#sobre" class="nav-link-aurum">Manifesto</a>
+          <a href="#newsletter" class="nav-link-aurum">Exclusivos</a>
+        </div>
+
+        <!-- Ações do lado direito: pesquisa + carrinho -->
+        <div class="d-flex align-items-center gap-3">
+          <!-- Botão pesquisa (ícone Bootstrap Icons) -->
+          <button class="btn p-0 border-0 bg-transparent text-white" style="font-size:1.1rem;" aria-label="Pesquisar">
+            <i class="bi bi-search" style="color: var(--aurum-gray-light);"></i>
+          </button>
+          <!-- Botão carrinho com badge de quantidade -->
+          <button class="btn p-0 border-0 bg-transparent text-white position-relative" aria-label="Carrinho (2 itens)">
+            <i class="bi bi-bag" style="font-size:1.1rem; color: var(--aurum-gray-light);"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge"
+              style="background:var(--aurum-gold); color:var(--aurum-black); font-family:var(--font-label); font-size:0.5rem; border-radius:0; padding:2px 4px;">
+              2
+            </span>
+          </button>
+          <!-- CTA "Entrar" — botão principal da navbar -->
+          <a href="#" class="btn-aurum d-none d-md-inline-block" style="padding:10px 24px; font-size:0.68rem;">
+            Entrar
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- /NAVBAR -->
+
+
+  <!-- =============================================
+       HERO SECTION
+       H1 com keyword principal para SEO.
+       Layout Bootstrap: row + col com order-* para mobile.
+       ============================================= -->
+  <section class="hero-section" id="inicio" aria-label="Secção principal AURUM">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <!-- Coluna esquerda: copy do hero -->
+        <div class="col-12 col-lg-6 order-2 order-lg-1">
+          <!-- Label de coleção — não é H1 (reservado para título principal) -->
+          <p class="hero-collection-label" aria-hidden="false">Coleção 2025 — Nova Temporada</p>
+
+          <!-- H1 — Título SEO principal. Uma por página, keyword no início -->
+          <h1 class="hero-title">
+            Forjado<br>
+            Para<br>
+            <span class="highlight">Vencer.</span>
+          </h1>
+
+          <!-- Tagline / descrição breve -->
+          <p class="hero-tagline">
+            Não é para todos. É para os que recusam o ordinário.
+            Equipamento desportivo de luxo — onde a performance encontra a perfeição.
+          </p>
+
+          <!-- CTAs principais -->
+          <div class="hero-cta-group">
+            <a href="#produto" class="btn-aurum" aria-label="Explorar a coleção AURUM X1">
+              Explorar Coleção
+            </a>
+            <a href="#sobre" class="btn-aurum-outline" aria-label="Saber mais sobre a AURUM">
+              O Nosso Manifesto
+            </a>
+          </div>
+
+          <!-- Mini estatísticas de prova social -->
+          <div class="row g-4 mt-2">
+            <div class="col-4">
+              <div class="hero-stat">
+                <span>4.9★</span>
+                Avaliação Média
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="hero-stat">
+                <span>15K+</span>
+                Atletas AURUM
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="hero-stat">
+                <span>48h</span>
+                Entrega Express
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna direita: visual do produto hero -->
+        <div class="col-12 col-lg-6 order-1 order-lg-2">
+          <div class="hero-product-wrap">
+
+            <!-- Halo de luz dourada -->
+            <div class="hero-glow-ring" aria-hidden="true"></div>
+
+            <!-- Produto principal (sapatilha CSS) -->
+            <div class="hero-product-placeholder" role="img" aria-label="AURUM X1 — Sapatilha de Alta Performance">
+              <div class="shoe-visual">
+                <div class="shoe-body"></div>
+                <div class="shoe-tip"></div>
+                <div class="shoe-lace"></div>
+                <div class="shoe-stripe"></div>
+                <div class="shoe-sole"></div>
+              </div>
+            </div>
+
+            <!-- Badge de preço flutuante -->
+            <div class="hero-price-badge" aria-label="Preço: 349€">
+              <div class="price-label">A partir de</div>
+              <div class="price-value">349€</div>
+            </div>
+
+            <!-- Badge de rating flutuante -->
+            <div class="hero-rating-badge" aria-label="Avaliação: 4.9 de 5">
+              <div>
+                <div style="color:var(--aurum-gold); font-size:0.8rem;">★★★★★</div>
+                <div style="font-family:var(--font-label); font-size:0.6rem; letter-spacing:0.1em; color:var(--aurum-gray-light);">312 REVIEWS</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </section>
+  <!-- /HERO -->
+
+
+  <!-- =============================================
+       TICKER / ANNOUNCEMENT BAR
+       Faixa animada — duplicada 2× para loop contínuo.
+       aria-hidden: conteúdo decorativo/redundante.
+       ============================================= -->
+  <div class="ticker-section" aria-hidden="true">
+    <div class="ticker-track">
+      <!-- Conteúdo original -->
+      <span class="ticker-item">Envio Grátis acima de 200€ <i class="bi bi-diamond-fill"></i></span>
+      <span class="ticker-item">Nova Coleção X1 Disponível <i class="bi bi-diamond-fill"></i></span>
+      <span class="ticker-item">Feito em Portugal <i class="bi bi-diamond-fill"></i></span>
+      <span class="ticker-item">Materiais Premium Certificados <i class="bi bi-diamond-fill"></i></span>
+      <span class="ticker-item">Garantia 3 Anos <i class="bi bi-diamond-fill"></i></span>
+      <span class="ticker-item">Atletas Profissionais Aprovam <i class="bi bi-diamond-fill"></i></span>
+      <!-- Duplicado para loop infinito sem salto -->
+      <span class="ticker-item">Envio Grátis acima de 200€ <i class="bi bi-diamond-fill"></i></span>
+      <span class="ticker-item">Nova Coleção X1 Disponível <i class="bi bi-diamond-fill"></i></span>
+      <span class="ticker-item">Feito em Portugal <i class="bi bi-diamond-fill"></i></span>
+      <span class="ticker-item">Materiais Premium Certificados <i class="bi bi-diamond-fill"></i></span>
+      <span class="ticker-item">Garantia 3 Anos <i class="bi bi-diamond-fill"></i></span>
+      <span class="ticker-item">Atletas Profissionais Aprovam <i class="bi bi-diamond-fill"></i></span>
+    </div>
+  </div>
+  <!-- /TICKER -->
+
+
+  <!-- =============================================
+       CATEGORIAS — 4 Cards em Grid Bootstrap
+       id="categorias" para ancora da navbar.
+       Cada card é semanticamente um article (conteúdo independente).
+       ============================================= -->
+  <section class="categories-section" id="categorias" aria-labelledby="cat-heading">
+    <div class="container">
+
+      <!-- Cabeçalho da secção -->
+      <div class="section-header fade-up">
+        <p class="label-tag">As Nossas Coleções</p>
+        <h2 class="section-title" id="cat-heading">
+          Equipamento <span class="text-gold">Premium</span><br>Para Cada Disciplina
+        </h2>
+        <div class="section-divider" aria-hidden="true"></div>
+      </div>
+
+      <!-- Grid de categorias — Bootstrap row + col -->
+      <div class="row g-3">
+
+        <!-- CATEGORIA: Sapatilhas (coluna larga à esquerda) -->
+        <div class="col-12 col-md-6 fade-up">
+          <article class="category-card" role="article" aria-label="Categoria: Sapatilhas">
+            <!-- Fundo visual da categoria -->
+            <div class="category-card-bg cat-bg-footwear">
+              <i class="bi bi-dribbble cat-icon" aria-hidden="true"></i>
+            </div>
+            <!-- Overlay de gradiente -->
+            <div class="category-card-overlay" aria-hidden="true"></div>
+            <!-- Conteúdo do card -->
+            <div class="category-card-content">
+              <h3 class="category-card-title">Sapatilhas</h3>
+              <p class="category-card-count">24 Modelos Disponíveis</p>
+              <a href="#" class="category-card-cta" aria-label="Explorar coleção de sapatilhas AURUM">
+                Explorar
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Coluna direita: 2 cards empilhados verticalmente -->
+        <div class="col-12 col-md-6">
+          <div class="row g-3">
+
+            <!-- CATEGORIA: Roupa Desportiva -->
+            <div class="col-12 fade-up">
+              <article class="category-card" style="aspect-ratio:16/9;" aria-label="Categoria: Roupa Desportiva">
+                <div class="category-card-bg cat-bg-clothing">
+                  <i class="bi bi-stars cat-icon" aria-hidden="true"></i>
+                </div>
+                <div class="category-card-overlay" aria-hidden="true"></div>
+                <div class="category-card-content" style="padding:20px;">
+                  <h3 class="category-card-title" style="font-size:1.4rem;">Roupa Desportiva</h3>
+                  <p class="category-card-count">38 Peças Exclusivas</p>
+                  <a href="#" class="category-card-cta" aria-label="Explorar roupa desportiva AURUM">Explorar</a>
+                </div>
+              </article>
+            </div>
+
+            <!-- CATEGORIA: Fitness + Acessórios (lado a lado) -->
+            <div class="col-6 fade-up">
+              <article class="category-card" style="aspect-ratio:1/1;" aria-label="Categoria: Fitness">
+                <div class="category-card-bg cat-bg-fitness">
+                  <i class="bi bi-lightning-charge-fill cat-icon" style="font-size:3rem;" aria-hidden="true"></i>
+                </div>
+                <div class="category-card-overlay" aria-hidden="true"></div>
+                <div class="category-card-content" style="padding:16px;">
+                  <h3 class="category-card-title" style="font-size:1.1rem;">Fitness</h3>
+                  <p class="category-card-count" style="font-size:0.58rem;">12 Produtos</p>
+                  <a href="#" class="category-card-cta" style="font-size:0.6rem;" aria-label="Explorar equipamento de fitness AURUM">Explorar</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-6 fade-up">
+              <article class="category-card" style="aspect-ratio:1/1;" aria-label="Categoria: Acessórios">
+                <div class="category-card-bg cat-bg-accessories">
+                  <i class="bi bi-gem cat-icon" style="font-size:3rem;" aria-hidden="true"></i>
+                </div>
+                <div class="category-card-overlay" aria-hidden="true"></div>
+                <div class="category-card-content" style="padding:16px;">
+                  <h3 class="category-card-title" style="font-size:1.1rem;">Acessórios</h3>
+                  <p class="category-card-count" style="font-size:0.58rem;">19 Produtos</p>
+                  <a href="#" class="category-card-cta" style="font-size:0.6rem;" aria-label="Explorar acessórios AURUM">Explorar</a>
+                </div>
+              </article>
+            </div>
+
+          </div><!-- /inner row -->
+        </div><!-- /col-md-6 direita -->
+
+      </div><!-- /row categorias -->
+    </div><!-- /container -->
+  </section>
+  <!-- /CATEGORIAS -->
+
+
+  <!-- =============================================
+       PRODUTO EM DESTAQUE — AURUM X1
+       H2 com keyword do produto para SEO interno.
+       ============================================= -->
+  <section class="featured-section" id="produto" aria-labelledby="featured-heading">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <!-- Visual do produto em destaque -->
+        <div class="col-12 col-lg-6 fade-up">
+          <div class="featured-product-visual">
+            <div class="featured-glow" aria-hidden="true"></div>
+
+            <!-- Sapatilha CSS maior -->
+            <div class="featured-shoe" role="img" aria-label="AURUM X1 — Vista lateral">
+              <div class="shoe-body"></div>
+              <div class="shoe-tip"></div>
+              <div class="shoe-lace"></div>
+              <div class="shoe-stripe"></div>
+              <div class="shoe-sole"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detalhes do produto -->
+        <div class="col-12 col-lg-6 fade-up">
+          <p class="label-tag">Produto em Destaque</p>
+
+          <!-- H2 — contém keyword do produto para SEO -->
+          <h2 class="featured-product-name" id="featured-heading">AURUM X1</h2>
+          <p class="featured-product-sub">Sapatilha de Alta Performance 2025</p>
+
+          <div class="gold-line" aria-hidden="true"></div>
+
+          <p class="featured-product-desc">
+            A X1 não é apenas uma sapatilha. É a fusão entre engenharia de elite e artesanato de luxo.
+            Desenvolvida com atletas profissionais durante 18 meses, cada milímetro foi calculado
+            para entregar a performance máxima sem comprometer o estilo.
+          </p>
+
+          <!-- Grid de especificações técnicas -->
+          <div class="specs-grid" role="list" aria-label="Especificações técnicas">
+            <div class="spec-item" role="listitem">
+              <div class="spec-label">Material Superior</div>
+              <div class="spec-value">Carbono + Couro Italiano</div>
+            </div>
+            <div class="spec-item" role="listitem">
+              <div class="spec-label">Tecnologia de Sola</div>
+              <div class="spec-value">AurumFoam™ Adaptativo</div>
+            </div>
+            <div class="spec-item" role="listitem">
+              <div class="spec-label">Peso</div>
+              <div class="spec-value">187g — Ultra Light</div>
+            </div>
+            <div class="spec-item" role="listitem">
+              <div class="spec-label">Certificação</div>
+              <div class="spec-value">ISO Performance Pro</div>
+            </div>
+          </div>
+
+          <!-- Avaliação -->
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <div style="color:var(--aurum-gold); font-size:1rem;">★★★★★</div>
+            <div style="font-family:var(--font-label); font-size:0.65rem; letter-spacing:0.1em; color:var(--aurum-gray-light);">
+              4.9/5 · 312 AVALIAÇÕES VERIFICADAS
+            </div>
+          </div>
+
+          <!-- Preço e CTA -->
+          <div class="featured-price">
+            349€ <small>IVA incluído</small>
+          </div>
+
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="#" class="btn-aurum" aria-label="Adicionar AURUM X1 ao carrinho">
+              <i class="bi bi-bag-plus me-2" aria-hidden="true"></i>Adicionar ao Carrinho
+            </a>
+            <a href="#" class="btn-aurum-outline" aria-label="Ver todos os detalhes do AURUM X1">
+              Ver Detalhes
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </section>
+  <!-- /PRODUTO EM DESTAQUE -->
+
+
+  <!-- =============================================
+       STATS BAR — Social Proof com números
+       ============================================= -->
+  <section class="stats-section" aria-label="Números AURUM">
+    <div class="container">
+      <div class="row align-items-center text-center g-4">
+
+        <div class="col-6 col-md-3">
+          <div class="stat-number" aria-label="15 mil atletas AURUM">15K+</div>
+          <div class="stat-label">Atletas Activos</div>
+        </div>
+
+        <!-- Divisória vertical — visível apenas em desktop -->
+        <div class="col-md-auto d-none d-md-flex justify-content-center">
+          <div class="stats-divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="stat-number" aria-label="93 países">93</div>
+          <div class="stat-label">Países de Entrega</div>
+        </div>
+
+        <div class="col-md-auto d-none d-md-flex justify-content-center">
+          <div class="stats-divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="stat-number" aria-label="4 ponto 9 de 5 estrelas">4.9★</div>
+          <div class="stat-label">Avaliação Global</div>
+        </div>
+
+        <div class="col-md-auto d-none d-md-flex justify-content-center">
+          <div class="stats-divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <div class="stat-number" aria-label="Desde 2024">2024</div>
+          <div class="stat-label">Fundada em Lisboa</div>
+        </div>
+
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </section>
+  <!-- /STATS -->
+
+
+  <!-- =============================================
+       GRID DE PRODUTOS — 4 Cards
+       ============================================= -->
+  <section class="products-section" aria-labelledby="products-heading">
+    <div class="container">
+
+      <!-- Cabeçalho -->
+      <div class="section-header fade-up">
+        <p class="label-tag">Mais Vendidos</p>
+        <h2 class="section-title" id="products-heading">
+          A Coleção <span class="text-gold">AURUM</span>
+        </h2>
+        <div class="section-divider" aria-hidden="true"></div>
+      </div>
+
+      <!-- Bootstrap row com 4 colunas em desktop, 2 em tablet, 1 em mobile -->
+      <div class="row g-4">
+
+        <!-- PRODUTO 1 — Sapatilha X1 -->
+        <div class="col-12 col-sm-6 col-xl-3 fade-up">
+          <article class="product-card h-100" aria-label="AURUM X1 Pro">
+            <div class="product-card-img">
+              <!-- Badge de novidade -->
+              <span class="product-badge">Novo</span>
+              <!-- Wishlist -->
+              <button class="product-wish-btn" aria-label="Adicionar AURUM X1 Pro à wishlist">
+                <i class="bi bi-heart" aria-hidden="true"></i>
+              </button>
+              <!-- Ícone representativo do produto -->
+              <i class="bi bi-dribbble product-card-icon" aria-hidden="true"></i>
+            </div>
+            <div class="product-card-body">
+              <p class="product-card-cat">Sapatilhas</p>
+              <h3 class="product-card-name">AURUM X1 Pro</h3>
+              <p class="product-card-desc">Carbon fiber + Italian leather. A definição de performance de luxo.</p>
+              <div class="product-rating" aria-label="Avaliação: 5 de 5 estrelas">★★★★★</div>
+            </div>
+            <div class="product-card-footer">
+              <span class="product-price" aria-label="Preço: 349 euros">349€</span>
+              <a href="#" class="btn-aurum" style="padding:8px 16px; font-size:0.62rem;" aria-label="Comprar AURUM X1 Pro">
+                Comprar
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- PRODUTO 2 — Casaco Técnico -->
+        <div class="col-12 col-sm-6 col-xl-3 fade-up">
+          <article class="product-card h-100" aria-label="Casaco Técnico AUR-V">
+            <div class="product-card-img" style="background: linear-gradient(135deg, #111 0%, #1a1a15 100%);">
+              <span class="product-badge">Best Seller</span>
+              <button class="product-wish-btn" aria-label="Adicionar Casaco Técnico à wishlist">
+                <i class="bi bi-heart" aria-hidden="true"></i>
+              </button>
+              <i class="bi bi-stars product-card-icon" aria-hidden="true"></i>
+            </div>
+            <div class="product-card-body">
+              <p class="product-card-cat">Roupa Desportiva</p>
+              <h3 class="product-card-name">Casaco Técnico AUR-V</h3>
+              <p class="product-card-desc">AeroDry™ fabric. Impermeável, respirável e com acabamento dourado.</p>
+              <div class="product-rating" aria-label="Avaliação: 5 de 5 estrelas">★★★★★</div>
+            </div>
+            <div class="product-card-footer">
+              <span class="product-price" aria-label="Preço: 219 euros">219€</span>
+              <a href="#" class="btn-aurum" style="padding:8px 16px; font-size:0.62rem;" aria-label="Comprar Casaco Técnico AUR-V">
+                Comprar
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- PRODUTO 3 — Kettlebell de Ouro -->
+        <div class="col-12 col-sm-6 col-xl-3 fade-up">
+          <article class="product-card h-100" aria-label="Kettlebell AURUM Gold Edition">
+            <div class="product-card-img" style="background: linear-gradient(135deg, #10100f 0%, #1a1a0f 100%);">
+              <button class="product-wish-btn" aria-label="Adicionar Kettlebell à wishlist">
+                <i class="bi bi-heart" aria-hidden="true"></i>
+              </button>
+              <i class="bi bi-lightning-charge-fill product-card-icon" aria-hidden="true"></i>
+            </div>
+            <div class="product-card-body">
+              <p class="product-card-cat">Fitness</p>
+              <h3 class="product-card-name">Kettlebell Gold Edition</h3>
+              <p class="product-card-desc">Aço fundido com acabamento dourado. Ergonomia certificada para performance máxima.</p>
+              <div class="product-rating" aria-label="Avaliação: 4.5 de 5 estrelas">★★★★½</div>
+            </div>
+            <div class="product-card-footer">
+              <span class="product-price" aria-label="Preço: 189 euros">189€</span>
+              <a href="#" class="btn-aurum" style="padding:8px 16px; font-size:0.62rem;" aria-label="Comprar Kettlebell Gold Edition">
+                Comprar
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- PRODUTO 4 — Bag de Luxo -->
+        <div class="col-12 col-sm-6 col-xl-3 fade-up">
+          <article class="product-card h-100" aria-label="Mochila AURUM Phantom">
+            <div class="product-card-img" style="background: linear-gradient(135deg, #111 0%, #191915 100%);">
+              <span class="product-badge" style="background:transparent; border:1px solid var(--aurum-gold); color:var(--aurum-gold);">Limitado</span>
+              <button class="product-wish-btn" aria-label="Adicionar Mochila Phantom à wishlist">
+                <i class="bi bi-heart" aria-hidden="true"></i>
+              </button>
+              <i class="bi bi-gem product-card-icon" aria-hidden="true"></i>
+            </div>
+            <div class="product-card-body">
+              <p class="product-card-cat">Acessórios</p>
+              <h3 class="product-card-name">Mochila Phantom</h3>
+              <p class="product-card-desc">Couro vegano de grão completo. Edição limitada com numeração individual.</p>
+              <div class="product-rating" aria-label="Avaliação: 5 de 5 estrelas">★★★★★</div>
+            </div>
+            <div class="product-card-footer">
+              <span class="product-price" aria-label="Preço: 299 euros">299€</span>
+              <a href="#" class="btn-aurum" style="padding:8px 16px; font-size:0.62rem;" aria-label="Comprar Mochila Phantom">
+                Comprar
+              </a>
+            </div>
+          </article>
+        </div>
+
+      </div><!-- /row produtos -->
+
+      <!-- CTA para ver todos os produtos -->
+      <div class="text-center mt-5 pt-3 fade-up">
+        <a href="#" class="btn-aurum-outline" aria-label="Ver toda a coleção AURUM">
+          Ver Toda a Coleção <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+        </a>
+      </div>
+
+    </div><!-- /container -->
+  </section>
+  <!-- /PRODUTOS -->
+
+
+  <!-- =============================================
+       MANIFESTO — Brand Story Section
+       id="sobre" para ancora da navbar.
+       ============================================= -->
+  <section class="manifesto-section" id="sobre" aria-labelledby="manifesto-heading">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+
+          <p class="label-tag text-center fade-up">O Nosso Manifesto</p>
+
+          <!-- Citação principal — H2 para hierarquia SEO -->
+          <blockquote class="manifesto-quote fade-up" id="manifesto-heading">
+            "O ouro não é apenas uma cor.<br>
+            É uma <em>exigência</em> — a recusa em aceitar<br>
+            menos do que o <em>extraordinário</em>."
+          </blockquote>
+
+          <!-- Divisória -->
+          <div class="section-divider fade-up" aria-hidden="true"></div>
+
+          <!-- Três pilares da marca — Bootstrap row -->
+          <div class="row g-4 mt-4">
+
+            <div class="col-12 col-md-4 text-center fade-up">
+              <div class="mb-3">
+                <i class="bi bi-shield-check" style="font-size:2rem; color:var(--aurum-gold);" aria-hidden="true"></i>
+              </div>
+              <h3 style="font-family:var(--font-display); font-size:1.2rem; color:var(--aurum-white); margin-bottom:12px;">
+                Materiais de Elite
+              </h3>
+              <p style="font-size:0.85rem; color:var(--aurum-gray-light); line-height:1.7;">
+                Cada material é selecionado pelos melhores fornecedores mundiais. Sem concessões, sem atalhos.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-4 text-center fade-up">
+              <div class="mb-3">
+                <i class="bi bi-trophy" style="font-size:2rem; color:var(--aurum-gold);" aria-hidden="true"></i>
+              </div>
+              <h3 style="font-family:var(--font-display); font-size:1.2rem; color:var(--aurum-white); margin-bottom:12px;">
+                Performance Comprovada
+              </h3>
+              <p style="font-size:0.85rem; color:var(--aurum-gray-light); line-height:1.7;">
+                Testado por atletas profissionais em condições extremas. Cada produto só lança depois de passar.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-4 text-center fade-up">
+              <div class="mb-3">
+                <i class="bi bi-geo-alt" style="font-size:2rem; color:var(--aurum-gold);" aria-hidden="true"></i>
+              </div>
+              <h3 style="font-family:var(--font-display); font-size:1.2rem; color:var(--aurum-white); margin-bottom:12px;">
+                Orgulhosamente Português
+              </h3>
+              <p style="font-size:0.85rem; color:var(--aurum-gray-light); line-height:1.7;">
+                Concebido e fabricado em Lisboa. Exportamos excelência portuguesa para o mundo.
+              </p>
+            </div>
+
+          </div><!-- /row pilares -->
+        </div>
+      </div>
+    </div><!-- /container -->
+  </section>
+  <!-- /MANIFESTO -->
+
+
+  <!-- =============================================
+       NEWSLETTER / CTA FINAL
+       Formulário acessível com label e aria.
+       ============================================= -->
+  <section class="newsletter-section" id="newsletter" aria-labelledby="newsletter-heading">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-12 col-lg-7">
+
+          <p class="label-tag fade-up">Acesso Exclusivo</p>
+
+          <h2 class="newsletter-title fade-up" id="newsletter-heading">
+            Entra no Círculo<br>
+            <span class="text-gold">AURUM</span>
+          </h2>
+
+          <p class="fade-up" style="color:var(--aurum-gray-light); font-size:0.9rem; margin:20px 0 40px; line-height:1.7;">
+            Sê o primeiro a saber dos novos lançamentos, acesso antecipado a edições limitadas
+            e ofertas exclusivas para membros AURUM.
+          </p>
+
+          <!-- Formulário de newsletter — Bootstrap input-group -->
+          <form class="fade-up" action="#" method="post" aria-label="Formulário de subscrição de newsletter">
+            <div class="input-group mb-3" style="max-width:500px; margin:0 auto;">
+              <!-- Label visualmente oculta mas presente para screen readers -->
+              <label for="emailInput" class="visually-hidden">Endereço de e-mail</label>
+              <input
+                type="email"
+                class="form-control input-aurum"
+                id="emailInput"
+                name="email"
+                placeholder="O teu endereço de e-mail"
+                required
+                autocomplete="email"
+                aria-required="true"
+              >
+              <button class="btn-aurum" type="submit" id="newsletter-submit" aria-label="Subscrever newsletter AURUM">
+                Subscrever
+              </button>
+            </div>
+            <p style="font-family:var(--font-label); font-size:0.6rem; letter-spacing:0.1em; color:rgba(136,136,136,0.5);">
+              Sem spam. Cancela quando quiseres. Política de Privacidade.
+            </p>
+          </form>
+
+        </div>
+      </div>
+    </div><!-- /container -->
+  </section>
+  <!-- /NEWSLETTER -->
+
+
+  <!-- =============================================
+       FOOTER
+       role="contentinfo" — elemento de landmark ARIA
+       ============================================= -->
+  <footer class="footer-aurum" role="contentinfo" aria-label="Rodapé AURUM">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Coluna 1: Brand -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="footer-brand" aria-label="AURUM">AURUM</div>
+          <p class="footer-tagline" style="margin-bottom:24px;">Forjado para Vencer</p>
+          <p style="font-size:0.85rem; color:var(--aurum-gray-light); line-height:1.7; max-width:280px;">
+            Equipamento desportivo de luxo. Feito em Lisboa, para quem exige mais.
+          </p>
+          <!-- Redes sociais -->
+          <div class="mt-4" role="list" aria-label="Redes sociais">
+            <a href="#" class="social-link" role="listitem" aria-label="Instagram AURUM">
+              <i class="bi bi-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-link" role="listitem" aria-label="Facebook AURUM">
+              <i class="bi bi-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-link" role="listitem" aria-label="TikTok AURUM">
+              <i class="bi bi-tiktok" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-link" role="listitem" aria-label="LinkedIn AURUM">
+              <i class="bi bi-linkedin" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Produtos -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4 class="footer-heading">Produtos</h4>
+          <nav aria-label="Links de produtos">
+            <a href="#" class="footer-link">Sapatilhas</a>
+            <a href="#" class="footer-link">Roupa</a>
+            <a href="#" class="footer-link">Fitness</a>
+            <a href="#" class="footer-link">Acessórios</a>
+            <a href="#" class="footer-link">Edições Limitadas</a>
+          </nav>
+        </div>
+
+        <!-- Coluna 3: Empresa -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4 class="footer-heading">Empresa</h4>
+          <nav aria-label="Links da empresa">
+            <a href="#" class="footer-link">Sobre Nós</a>
+            <a href="#" class="footer-link">Manifesto</a>
+            <a href="#" class="footer-link">Carreiras</a>
+            <a href="#" class="footer-link">Imprensa</a>
+            <a href="#" class="footer-link">Contacto</a>
+          </nav>
+        </div>
+
+        <!-- Coluna 4: Suporte -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4 class="footer-heading">Suporte</h4>
+          <nav aria-label="Links de suporte">
+            <a href="#" class="footer-link">FAQ</a>
+            <a href="#" class="footer-link">Envios & Devoluções</a>
+            <a href="#" class="footer-link">Guia de Tamanhos</a>
+            <a href="#" class="footer-link">Garantia</a>
+            <a href="#" class="footer-link">Minha Conta</a>
+          </nav>
+        </div>
+
+        <!-- Coluna 5: Contacto -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4 class="footer-heading">Contacto</h4>
+          <address style="font-style:normal;">
+            <p class="footer-link" style="cursor:default;">
+              <i class="bi bi-envelope me-2" style="color:var(--aurum-gold);" aria-hidden="true"></i>
+              hello@aurum.pt
+            </p>
+            <p class="footer-link" style="cursor:default;">
+              <i class="bi bi-telephone me-2" style="color:var(--aurum-gold);" aria-hidden="true"></i>
+              +351 210 000 000
+            </p>
+            <p class="footer-link" style="cursor:default;">
+              <i class="bi bi-geo-alt me-2" style="color:var(--aurum-gold);" aria-hidden="true"></i>
+              Lisboa, Portugal
+            </p>
+          </address>
+        </div>
+
+      </div><!-- /row footer -->
+
+      <!-- Copyright bar -->
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <p class="footer-copy mb-0">
+              © 2025 AURUM. Todos os direitos reservados. Marca registada.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 text-md-end mt-3 mt-md-0">
+            <a href="#" class="footer-copy text-decoration-none me-3">Política de Privacidade</a>
+            <a href="#" class="footer-copy text-decoration-none me-3">Termos & Condições</a>
+            <a href="#" class="footer-copy text-decoration-none">Cookies</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /container -->
+  </footer>
+  <!-- /FOOTER -->
+
+
+  <!-- =============================================
+       BOOTSTRAP JS (Bundle com Popper.js)
+       Carregado no final do body — melhor performance.
+       Necessário para componentes interativos Bootstrap.
+       ============================================= -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmfVOrk5qeXr1+pxN7Og4SnOB4P"
+    crossorigin="anonymous">
+  </script>
+
+  <!-- =============================================
+       JAVASCRIPT CUSTOMIZADO
+       1. Navbar scroll effect
+       2. Intersection Observer (animações fade-up)
+       3. Wishlist toggle
+       ============================================= -->
+  <script>
+    /* -----------------------------------------------
+       1. NAVBAR SCROLL EFFECT
+       Adiciona classe .scrolled à navbar quando
+       o utilizador faz scroll para além de 80px.
+       ----------------------------------------------- */
+    (function() {
+      const nav = document.getElementById('mainNav');
+      if (!nav) return;
+
+      // Throttle para melhor performance (evita re-render a cada pixel)
+      let ticking = false;
+
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          requestAnimationFrame(function() {
+            if (window.scrollY > 80) {
+              nav.classList.add('scrolled');
+            } else {
+              nav.classList.remove('scrolled');
+            }
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+    })();
+
+
+    /* -----------------------------------------------
+       2. INTERSECTION OBSERVER — Animações fade-up
+       Observa todos os elementos .fade-up e adiciona
+       .visible quando entram no viewport (>15% visível).
+       Mais performático que scroll events com getBoundingClientRect.
+       ----------------------------------------------- */
+    (function() {
+      // Verifica suporte ao IntersectionObserver
+      if (!('IntersectionObserver' in window)) {
+        // Fallback: mostra todos os elementos sem animação
+        document.querySelectorAll('.fade-up').forEach(function(el) {
+          el.classList.add('visible');
+        });
+        return;
+      }
+
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            // Deixa de observar após animar (performance)
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.15,       // Activa quando 15% do elemento é visível
+        rootMargin: '0px 0px -40px 0px' // Activa 40px antes de entrar no viewport
+      });
+
+      // Observa todos os elementos com classe fade-up
+      document.querySelectorAll('.fade-up').forEach(function(el) {
+        observer.observe(el);
+      });
+    })();
+
+
+    /* -----------------------------------------------
+       3. WISHLIST TOGGLE (coração nos cards)
+       Toggle visual entre bi-heart e bi-heart-fill.
+       Em produção, enviaria request ao servidor.
+       ----------------------------------------------- */
+    (function() {
+      document.querySelectorAll('.product-wish-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var icon = this.querySelector('i');
+          if (icon.classList.contains('bi-heart')) {
+            icon.classList.replace('bi-heart', 'bi-heart-fill');
+            this.style.background = 'var(--aurum-gold)';
+            this.style.color = 'var(--aurum-black)';
+            this.setAttribute('aria-label', this.getAttribute('aria-label').replace('Adicionar', 'Remover'));
+          } else {
+            icon.classList.replace('bi-heart-fill', 'bi-heart');
+            this.style.background = 'rgba(8,8,8,0.8)';
+            this.style.color = 'var(--aurum-gold)';
+            this.setAttribute('aria-label', this.getAttribute('aria-label').replace('Remover', 'Adicionar'));
+          }
+        });
+      });
+    })();
+
+
+    /* -----------------------------------------------
+       4. NEWSLETTER FORM — Feedback visual
+       Previne reload e mostra mensagem de confirmação.
+       ----------------------------------------------- */
+    (function() {
+      var form = document.querySelector('.newsletter-section form');
+      if (!form) return;
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault(); // Previne reload da página
+
+        var btn = document.getElementById('newsletter-submit');
+        var input = document.getElementById('emailInput');
+
+        if (input.value.trim() === '') return;
+
+        // Feedback de sucesso
+        btn.textContent = 'Subscrito ✓';
+        btn.style.background = '#2a6b2a';
+        btn.style.borderColor = '#2a6b2a';
+        btn.style.color = '#fff';
+        input.value = '';
+        input.disabled = true;
+
+        // Reset após 4 segundos
+        setTimeout(function() {
+          btn.textContent = 'Subscrever';
+          btn.style.background = '';
+          btn.style.borderColor = '';
+          btn.style.color = '';
+          input.disabled = false;
+        }, 4000);
+      });
+    })();
+  </script>
+
+</body>
+</html>
